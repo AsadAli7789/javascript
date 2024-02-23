@@ -3,7 +3,7 @@ var x = 1, y = 2, z = 3 ;
 var F=(x+y+z)
 document.getElementById("opl").textContent="total="+ F
 
-// 2. Declare 5 legal & 5 illegal variable names.
+// Q2. Declare 5 legal & 5 illegal variable names.
 // Legal variable names:
 var myVariable
 var _underscore
