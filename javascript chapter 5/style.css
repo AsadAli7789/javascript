@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #27282c;
+    min-height: 100vh;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.sss{
+    position: relative;
+  overflow: hidden;
+  height: 300px; 
+   background-color: white;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   letter-spacing: 0.1em;
+   font-weight: 400 ;
+   padding: 10px 30px;
+   transition: 0.5s;
+   width: 220px;
+
+}
+.sss:hover{
+    background: var(--clr);
+    color: var(--clr);
+   
+    box-shadow: 0 0 35px var(--clr);
+}
+p:before{
+content:'' ;
+position: absolute;
+inset: 2px;
+background: #27282c;
+
+}
+p>span{
+    display: block;
+    position: hidden;
+    z-index: 1;
+    
+}
+
+.sss:hover .klo {
+    position: relative;
+
+}
+p>i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+p>i:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50% ) skewX(325deg);
+    transition: 0.5s;
+}
+p:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+
+
+
+p>i:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50% ) skewX(325deg);
+    transition: 0.5s;
+}
+p:hover i::after  {
+    width: 20px;
+    left: 80%;
+}
